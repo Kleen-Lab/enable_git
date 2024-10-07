@@ -17,8 +17,8 @@ Run the following command
 `curl -L -o ~/Documents/ssh_key_gen.sh https://raw.githubusercontent.com/Kleen-Lab/enable_git/refs/heads/main/ssh_key_gen.sh`
 
 ### Step 4
-Run the following commands one after the other  
-
-`~/Documents/check_git.sh`
+Run the following commands one after the other
 
 `~/Documents/ssh_key_gen.sh`
+
+`~/Documents/check_git.sh`
