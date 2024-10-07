@@ -2,9 +2,11 @@
 
 #User steps required 
 #-) curl command to download this script from a public repo (raw access) in a PARTICULAR folder
-########     curl -L -o ~/Desktop/check_git.sh https://raw.githubusercontent.com/Kleen-Lab/fetch_clip_setup/refs/heads/main/check_git.sh
+########     curl -L -o ~/Documents/check_git.sh https://raw.githubusercontent.com/Kleen-Lab/fetch_clip_setup/refs/heads/main/check_git.sh
 #-) execute command to run this script via command line
-########     ~/Desktop/check_git.sh
+########     ~/Documents/check_git.sh
+#-) curl -L -o ~/Documents/ssh_key_gen.sh https://raw.githubusercontent.com/Kleen-Lab/enable_git/refs/heads/main/ssh_key_gen.sh
+########     ~/Documents/ssh_key_gen.sh
 
 
 
@@ -60,14 +62,15 @@ echo "completed the installation of anaconda, taking care of finding the right p
 
 echo "_______________________________________________________________________________________________________________"
 echo "###############################################################################################################"
-echo "completed the installation of python3.10 version, generating ssh key for interaction w other private git repos"
+#echo "completed the installation of python3.10 version, generating ssh key for interaction w other private git repos"
 
-./fetch_clip_setup/ssh_key_gen.sh
+#./fetch_clip_setup/ssh_key_gen.sh
+#
+#echo "_______________________________________________________________________________________________________________"
+#echo "###############################################################################################################"
+#echo "completed ssh key setup for github, moving on to running make_fetch_clip_env for virtual environment setup..."
 
-echo "_______________________________________________________________________________________________________________"
-echo "###############################################################################################################"
-echo "completed ssh key setup for github, moving on to running make_fetch_clip_env for virtual environment setup..."
-
+echo "completed the installation of python3.10 version, moving on to running make_fetch_clip_env for virtual environment setup..."
 ./fetch_clip_setup/make_fetch_clip_env.sh
 
 
