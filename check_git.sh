@@ -42,7 +42,7 @@ mkdir -p ~/Desktop/kleen_lab_github/
 
 cd ~/Desktop/kleen_lab_github/
 
-git clone https://github.com/Kleen-Lab/fetch_clip_setup.git
+git clone git@github.com:Kleen-Lab/fetch_clip_setup.git
 cd fetch_clip_setup
 git pull
 #making all files executable in the current directory 
