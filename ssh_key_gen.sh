@@ -19,7 +19,7 @@ else
     echo "Creating SSH key..."
     ssh-keygen -t ed25519 -C "$key_comment" -f "$key_file" -N ""
 fi
-c
+
 # Step 3 : SSH Agent stuff
 eval "$(ssh-agent -s)"
 
