@@ -1,8 +1,14 @@
 #!/bin/zsh
 
+# Temporarily disable history for security reasons
+set +o history
+
+echo 'Enter the token provided to you by akshat :'
+read github_token
+
 # Step 1: Define variables in lowercase
 github_username="kleenlab-fellow"
-github_token="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"
+#github_token="no_secrets"
 user=$(whoami)
 host=$(hostname)
 key_comment="${user}@${host}"
@@ -62,6 +68,12 @@ else
     echo "Failed to add SSH key to GitHub. Response: $response"
     exit 1
 fi
+
+
+unset github_token
+
+# re-enable history
+set -o history
 
 # Step 7: Print success message and SSH key path
 echo "SSH key created at $key_file and added to your GitHub account."

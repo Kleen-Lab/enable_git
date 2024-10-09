@@ -3,6 +3,9 @@ public repo for installing the raw version of git installation and ssh setup
 
 > Follow the steps below to complete your installation process
 
+### Pre Requisite
+Email akshat at akshat.kalra@ucsf.edu and ask him to send you the personalized access token for enabling your access to kleen lab's github files in a secured way, once you have that token, you may move forward with the next steps.
+
 ### Step 1
 Open up your terminal window
 
