@@ -26,6 +26,4 @@ Run the following commands one after the other
 
 `~/Documents/check_git.sh`
 
-![cover]($HOME/Documents/OPSCEA_cover.png)
-![cover]("$HOME/Documents/OPSCEA_cover.png")
-![cover]("$HOME/Documents/OPSCEA_cover.png")
+![OPSCEA_cover](assets/OPSCEA_cover.png)
