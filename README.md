@@ -25,5 +25,3 @@ Run the following commands one after the other
 `~/Documents/ssh_key_gen.sh`
 
 `~/Documents/check_git.sh`
-
-![OPSCEA_cover](assets/OPSCEA_cover.png)
