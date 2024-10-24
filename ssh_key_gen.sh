@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Temporarily disable history for security reasons
-set +o history
+#set +o history
 
 echo 'Enter the token provided to you by akshat :'
 read github_token
@@ -73,7 +73,7 @@ fi
 unset github_token
 
 # re-enable history
-set -o history
+#set -o history
 
 # Step 7: Print success message and SSH key path
 echo "SSH key created at $key_file and added to your GitHub account."

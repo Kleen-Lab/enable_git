@@ -12,7 +12,7 @@ Open up your terminal window
 ### Step 2
 Copy this command below, paste it in the window and press Enter to run it 
 
-`curl -L -o ~/Documents/check_git.sh https://raw.githubusercontent.com/Kleen-Lab/fetch_clip_setup/refs/heads/main/check_git.sh`
+`curl -L -o ~/Documents/check_git.sh https://raw.githubusercontent.com/Kleen-Lab/enable_git/refs/heads/main/check_git.sh`
 
 ### Step 3
 Run the following command 
