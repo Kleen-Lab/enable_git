@@ -58,7 +58,7 @@ echo "__________________________________________________________________________
 echo "###############################################################################################################"
 echo "completed the installation of anaconda, taking care of finding the right python version now"
 
-./fetch_clip_setup/python3.10_check.sh
+./fetch_clip_setup/python3.11_check.sh
 
 echo "_______________________________________________________________________________________________________________"
 echo "###############################################################################################################"
@@ -73,6 +73,12 @@ echo "##########################################################################
 echo "completed the installation of python3.10 version, moving on to running make_fetch_clip_env for virtual environment setup..."
 ./fetch_clip_setup/make_fetch_clip_env.sh
 
+
+echo "_______________________________________________________________________________________________________________"
+echo "###############################################################################################################"
+echo "completed the creation of the virtual environment, moving on to for_launch operations"
+
+./fetch_clip_setup/for_launch_ops.sh
 
 
 
