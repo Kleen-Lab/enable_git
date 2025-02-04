@@ -48,7 +48,11 @@ git clone git@github.com:Kleen-Lab/fetch_clip_setup.git
 cd fetch_clip_setup
 git pull
 #making all files executable in the current directory 
-chmod +x *
+chmod +rx *
+
+echo "Sudo permission to make all files executable in fetch_clip"
+sudo chmod +rx *
+
 cd ..
 
 ./fetch_clip_setup/install_anaconda.sh
@@ -79,6 +83,27 @@ echo "##########################################################################
 echo "completed the creation of the virtual environment, moving on to for_launch operations"
 
 ./fetch_clip_setup/for_launch_ops.sh
+
+echo "_______________________________________________________________________________________________________________"
+echo "###############################################################################################################"
+echo "completed the for_launch ops, moving on to the ssh installation process"
+
+./fetch_clip_setup/seahorse_setup.sh
+
+echo "_______________________________________________________________________________________________________________"
+echo "###############################################################################################################"
+echo "completed the seahorse setup, moving on to the sshfs installation process"
+
+echo "Before you get directed to sshfs, please make sure you read the sshfs installation guideline provide on the github page (y/n):"
+read end_prompt
+
+if command -v sshfs >/dev/null 2>&1; then
+    echo "Looks like you already have sshfs installed in your system."
+else
+    echo "sshfs is NOT installed."
+    curl -L -o ~/Desktop/kleen_lab_github/sshfs-2.5.0.pkg https://github.com/osxfuse/sshfs/releases/download/osxfuse-sshfs-2.5.0/sshfs-2.5.0.pkg
+    open ~/Desktop/kleen_lab_github/sshfs-2.5.0.pkg
+fi
 
 
 
